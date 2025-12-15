@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# Digital Newsletter - LLM Insights & Data Tools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React Vite application for digital newsletter subscription with support for LLM insights and open source data tools.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Beautiful Landing Page**: Eye-catching hero section with gradient design
+- **Newsletter Preview**: Showcase of example monthly issues
+- **Subscription Tiers**: Three pricing options ($10, $25, $50/month) with feature comparison
+- **Projects Showcase**: Highlights of Datasette, LLM, and sqlite-utils projects
+- **Responsive Design**: Mobile-friendly and adapts to all screen sizes
+- **Modern UI**: Clean, professional design with smooth animations
 
-## React Compiler
+## 📦 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - Latest version with modern features
+- **TypeScript** - Type-safe code
+- **Vite 7** - Fast build tool and dev server
+- **CSS** - Custom styling with responsive design
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Clone the repository
+git clone https://github.com/0x-m1cro/digital-newsletter.git
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Navigate to the project directory
+cd digital-newsletter
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Install dependencies
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🏗️ Build
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## 🧹 Linting
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## 📝 About the Newsletter
+
+$10/month and up sponsors get a short, curated email digest of the month's most important LLM developments and highlights from research. Perfect for staying on top of LLM developments in just 10 minutes per month.
+
+### Supported Projects
+
+Your sponsorship helps support:
+- **Datasette** - Multi-tool for exploring and publishing data
+- **LLM** - CLI utility for interacting with Large Language Models
+- **sqlite-utils** - Python CLI utility for SQLite databases
+- Blog and weekly-ish newsletter with comprehensive LLM coverage
+- Dozens of Datasette plugins (datasette-graphql, datasette-cluster-map, etc.)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📧 Contact
+
+For questions or support, please visit the contact section on the website.
