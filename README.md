@@ -11,6 +11,14 @@ A modern React Vite application for digital newsletter subscription with support
 - **Responsive Design**: Mobile-friendly and adapts to all screen sizes
 - **Modern UI**: Clean, professional design with smooth animations
 
+## 📸 Screenshots
+
+![Full App Screenshot](screenshots/app-screenshot.png)
+*Complete application view showing all sections*
+
+![Hero Section](screenshots/hero-section.png)
+*Landing page hero section*
+
 ## 📦 Tech Stack
 
 - **React 19** - Latest version with modern features
