@@ -1,0 +1,149 @@
+.projects {
+  padding: 80px 20px;
+  background: #2d3748;
+  color: white;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects .section-title {
+  color: white;
+}
+
+.projects .section-subtitle {
+  color: #cbd5e0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-card {
+  background: #1a202c;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #4a5568;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #667eea;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.project-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e0;
+  margin-bottom: 1.5rem;
+}
+
+.project-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.project-features li {
+  padding: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  color: #667eea;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+}
+
+.project-link:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(5px);
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-section {
+  background: #1a202c;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #4a5568;
+}
+
+.info-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.info-section p {
+  color: #cbd5e0;
+  line-height: 1.7;
+}
+
+.plugin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.plugin-item {
+  color: #cbd5e0;
+  padding: 0.75rem;
+  background: #2d3748;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.plugin-item strong {
+  color: #667eea;
+}
+
+.plugin-item em {
+  color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-info {
+    grid-template-columns: 1fr;
+  }
+}
